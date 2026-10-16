@@ -1,0 +1,7 @@
+location_id,location_name,latitude,longitude,record_type,vehicle_count,nonmotor_share,lane_count,signal_density,score,rank,complete,missing_indicators,contrib_vehicle_count,contrib_nonmotor_share,contrib_lane_count,contrib_signal_density
+A,Site A,23.7509,90.3935,synthetic,1850.0,32.0,2.0,0.8,67.91057123,1.0,True,,15.113636363636363,17.24137931034483,20.0,15.555555555555555
+B,Site B,23.7808,90.4167,synthetic,2400.0,18.0,4.0,1.5,46.813827935,5.0,True,,23.863636363636363,5.172413793103448,10.0,7.777777777777779
+C,Site C,23.7104,90.4074,synthetic,1200.0,41.0,2.0,,62.215909091,2.0,False,signal_density,5.96590909090909,31.25,25.0,0.0
+D,Site D,23.8103,90.4125,synthetic,3100.0,12.0,6.0,2.2,35.0,6.0,True,,35.0,0.0,0.0,0.0
+E,Site E,23.7461,90.3742,synthetic,900.0,25.0,2.0,0.4,51.206896552,4.0,True,,0.0,11.206896551724139,20.0,20.0
+F,Site F,23.7925,90.368,synthetic,2000.0,36.0,4.0,1.1,60.411877395,3.0,True,,17.5,20.689655172413794,10.0,12.222222222222223

@@ -1,0 +1,15 @@
+:root{--bg:#16181b;--panel:#1f2226;--line:#33373d;--tx:#ecebe6;--mut:#a3a7ad;--ac:#e0a43a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 system-ui,Segoe UI,Roboto,sans-serif}
+header{padding:12px 16px;border-bottom:1px solid var(--line)}h1{font-size:18px;margin:0}h2{font-size:16px;margin:0 0 8px}h3{font-size:14px;margin:12px 0 4px}
+nav{display:flex;gap:4px;overflow-x:auto;padding:8px 16px;border-bottom:1px solid var(--line)}
+nav button{background:none;border:1px solid transparent;color:var(--mut);padding:6px 12px;border-radius:6px;cursor:pointer;white-space:nowrap;font:inherit}
+nav button[aria-selected=true]{color:var(--tx);border-color:var(--ac)}button:focus-visible,input:focus-visible,select:focus-visible,circle:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+.warn{background:#3a2d12;border:1px solid var(--ac);padding:8px 12px;border-radius:6px;margin:12px 16px;font-size:13px}
+main{padding:0 16px 32px;max-width:960px;margin:auto}section{display:none}section.on{display:block}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}.big{font-size:24px;color:var(--ac)}
+.sc{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13px}th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;white-space:nowrap}th{color:var(--mut);cursor:pointer}
+.mut{color:var(--mut);font-size:13px}.tag{border:1px solid var(--ac);color:var(--ac);border-radius:4px;padding:0 6px;font-size:11px}
+input[type=range]{width:100%;accent-color:var(--ac)}label{display:block}.bar{display:flex;height:12px;background:var(--line);border-radius:3px;overflow:hidden;min-width:140px}.bar i{display:block}
+svg.map{width:100%;height:auto;background:#101214;border:1px solid var(--line);border-radius:8px}svg text{fill:var(--tx);font-size:11px}
+button.b,select{background:var(--panel);color:var(--tx);border:1px solid var(--line);padding:6px 12px;border-radius:6px;font:inherit;cursor:pointer}textarea{width:100%;height:180px;background:#101214;color:var(--tx);border:1px solid var(--line);font:12px monospace}

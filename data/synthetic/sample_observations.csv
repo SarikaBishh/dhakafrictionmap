@@ -1,0 +1,25 @@
+location_id,location_name,latitude,longitude,indicator_name,indicator_value,unit,observation_start,observation_end,source_name,source_url,sample_size,data_quality_status,record_type
+A,Site A,23.7509,90.3935,vehicle_count,1850,veh/hr,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+A,Site A,23.7509,90.3935,nonmotor_share,32,%,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+A,Site A,23.7509,90.3935,lane_count,2,lanes,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+A,Site A,23.7509,90.3935,signal_density,0.8,per km,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+B,Site B,23.7808,90.4167,vehicle_count,2400,veh/hr,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+B,Site B,23.7808,90.4167,nonmotor_share,18,%,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+B,Site B,23.7808,90.4167,lane_count,4,lanes,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+B,Site B,23.7808,90.4167,signal_density,1.5,per km,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+C,Site C,23.7104,90.4074,vehicle_count,1200,veh/hr,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+C,Site C,23.7104,90.4074,nonmotor_share,41,%,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+C,Site C,23.7104,90.4074,lane_count,2,lanes,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+C,Site C,23.7104,90.4074,signal_density,,per km,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,missing,synthetic
+D,Site D,23.8103,90.4125,vehicle_count,3100,veh/hr,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+D,Site D,23.8103,90.4125,nonmotor_share,12,%,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+D,Site D,23.8103,90.4125,lane_count,6,lanes,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+D,Site D,23.8103,90.4125,signal_density,2.2,per km,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+E,Site E,23.7461,90.3742,vehicle_count,900,veh/hr,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+E,Site E,23.7461,90.3742,nonmotor_share,25,%,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+E,Site E,23.7461,90.3742,lane_count,2,lanes,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+E,Site E,23.7461,90.3742,signal_density,0.4,per km,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+F,Site F,23.7925,90.368,vehicle_count,2000,veh/hr,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+F,Site F,23.7925,90.368,nonmotor_share,36,%,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+F,Site F,23.7925,90.368,lane_count,4,lanes,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic
+F,Site F,23.7925,90.368,signal_density,1.1,per km,2026-01-01,2026-01-07,SYNTHETIC SAMPLE (invented),,,ok,synthetic

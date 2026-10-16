@@ -1,0 +1,243 @@
+{
+  "indicators": [
+    {
+      "key": "vehicle_count",
+      "label": "Vehicle count",
+      "unit": "veh/hr",
+      "direction": 1,
+      "default_weight": 0.35,
+      "note": "short-duration count; more traffic is not automatically worse"
+    },
+    {
+      "key": "nonmotor_share",
+      "label": "Non-motorised share",
+      "unit": "%",
+      "direction": 1,
+      "default_weight": 0.25,
+      "note": "higher share = more mixed traffic"
+    },
+    {
+      "key": "lane_count",
+      "label": "Lane count",
+      "unit": "lanes",
+      "direction": -1,
+      "default_weight": 0.2,
+      "note": "fewer lanes = less capacity"
+    },
+    {
+      "key": "signal_density",
+      "label": "Signal density",
+      "unit": "per km",
+      "direction": -1,
+      "default_weight": 0.2,
+      "note": "fewer signals = less control"
+    }
+  ],
+  "scenarios": {
+    "Default": {
+      "vehicle_count": 0.35,
+      "nonmotor_share": 0.25,
+      "lane_count": 0.2,
+      "signal_density": 0.2
+    },
+    "Equal": {
+      "vehicle_count": 0.25,
+      "nonmotor_share": 0.25,
+      "lane_count": 0.25,
+      "signal_density": 0.25
+    },
+    "Traffic-heavy": {
+      "vehicle_count": 0.6,
+      "nonmotor_share": 0.2,
+      "lane_count": 0.1,
+      "signal_density": 0.1
+    },
+    "Infrastructure-heavy": {
+      "vehicle_count": 0.1,
+      "nonmotor_share": 0.2,
+      "lane_count": 0.35,
+      "signal_density": 0.35
+    }
+  },
+  "sites": [
+    {
+      "id": "A",
+      "name": "Site A",
+      "lat": 23.7509,
+      "lon": 90.3935,
+      "record_type": "synthetic",
+      "period": "2026-01-01 to 2026-01-07",
+      "source": "SYNTHETIC SAMPLE (invented)",
+      "values": {
+        "vehicle_count": 1850.0,
+        "nonmotor_share": 32.0,
+        "lane_count": 2.0,
+        "signal_density": 0.8
+      },
+      "default_score": 67.91057123,
+      "default_rank": 1
+    },
+    {
+      "id": "B",
+      "name": "Site B",
+      "lat": 23.7808,
+      "lon": 90.4167,
+      "record_type": "synthetic",
+      "period": "2026-01-01 to 2026-01-07",
+      "source": "SYNTHETIC SAMPLE (invented)",
+      "values": {
+        "vehicle_count": 2400.0,
+        "nonmotor_share": 18.0,
+        "lane_count": 4.0,
+        "signal_density": 1.5
+      },
+      "default_score": 46.813827935,
+      "default_rank": 5
+    },
+    {
+      "id": "C",
+      "name": "Site C",
+      "lat": 23.7104,
+      "lon": 90.4074,
+      "record_type": "synthetic",
+      "period": "2026-01-01 to 2026-01-07",
+      "source": "SYNTHETIC SAMPLE (invented)",
+      "values": {
+        "vehicle_count": 1200.0,
+        "nonmotor_share": 41.0,
+        "lane_count": 2.0,
+        "signal_density": null
+      },
+      "default_score": 62.215909091,
+      "default_rank": 2
+    },
+    {
+      "id": "D",
+      "name": "Site D",
+      "lat": 23.8103,
+      "lon": 90.4125,
+      "record_type": "synthetic",
+      "period": "2026-01-01 to 2026-01-07",
+      "source": "SYNTHETIC SAMPLE (invented)",
+      "values": {
+        "vehicle_count": 3100.0,
+        "nonmotor_share": 12.0,
+        "lane_count": 6.0,
+        "signal_density": 2.2
+      },
+      "default_score": 35.0,
+      "default_rank": 6
+    },
+    {
+      "id": "E",
+      "name": "Site E",
+      "lat": 23.7461,
+      "lon": 90.3742,
+      "record_type": "synthetic",
+      "period": "2026-01-01 to 2026-01-07",
+      "source": "SYNTHETIC SAMPLE (invented)",
+      "values": {
+        "vehicle_count": 900.0,
+        "nonmotor_share": 25.0,
+        "lane_count": 2.0,
+        "signal_density": 0.4
+      },
+      "default_score": 51.206896552,
+      "default_rank": 4
+    },
+    {
+      "id": "F",
+      "name": "Site F",
+      "lat": 23.7925,
+      "lon": 90.368,
+      "record_type": "synthetic",
+      "period": "2026-01-01 to 2026-01-07",
+      "source": "SYNTHETIC SAMPLE (invented)",
+      "values": {
+        "vehicle_count": 2000.0,
+        "nonmotor_share": 36.0,
+        "lane_count": 4.0,
+        "signal_density": 1.1
+      },
+      "default_score": 60.411877395,
+      "default_rank": 3
+    }
+  ],
+  "quality": {
+    "errors": [],
+    "warnings": [
+      [
+        "missing_values",
+        "1 missing value(s); never treated as zero"
+      ]
+    ]
+  },
+  "sensitivity": [
+    {
+      "location_id": "A",
+      "Default": 1.0,
+      "Equal": 1.0,
+      "Traffic-heavy": 3.0,
+      "Infrastructure-heavy": 2.0,
+      "rank_min": 1.0,
+      "rank_max": 3.0,
+      "rank_range": 2.0,
+      "sensitive": true
+    },
+    {
+      "location_id": "B",
+      "Default": 5.0,
+      "Equal": 5.0,
+      "Traffic-heavy": 4.0,
+      "Infrastructure-heavy": 5.0,
+      "rank_min": 4.0,
+      "rank_max": 5.0,
+      "rank_range": 1.0,
+      "sensitive": false
+    },
+    {
+      "location_id": "C",
+      "Default": 2.0,
+      "Equal": 2.0,
+      "Traffic-heavy": 5.0,
+      "Infrastructure-heavy": 1.0,
+      "rank_min": 1.0,
+      "rank_max": 5.0,
+      "rank_range": 4.0,
+      "sensitive": true
+    },
+    {
+      "location_id": "D",
+      "Default": 6.0,
+      "Equal": 6.0,
+      "Traffic-heavy": 1.0,
+      "Infrastructure-heavy": 6.0,
+      "rank_min": 1.0,
+      "rank_max": 6.0,
+      "rank_range": 5.0,
+      "sensitive": true
+    },
+    {
+      "location_id": "E",
+      "Default": 4.0,
+      "Equal": 3.0,
+      "Traffic-heavy": 6.0,
+      "Infrastructure-heavy": 3.0,
+      "rank_min": 3.0,
+      "rank_max": 6.0,
+      "rank_range": 3.0,
+      "sensitive": true
+    },
+    {
+      "location_id": "F",
+      "Default": 3.0,
+      "Equal": 4.0,
+      "Traffic-heavy": 2.0,
+      "Infrastructure-heavy": 4.0,
+      "rank_min": 2.0,
+      "rank_max": 4.0,
+      "rank_range": 2.0,
+      "sensitive": true
+    }
+  ]
+}
